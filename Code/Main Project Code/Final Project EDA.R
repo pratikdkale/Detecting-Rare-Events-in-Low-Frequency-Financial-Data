@@ -840,8 +840,7 @@ input_data <- merged_df %>%
     FlowRatio,
     avg_sentiment,
     headline_count,
-    #amihud_illiq  
-    )
+  )
 
 str(input_data)
 
@@ -871,12 +870,3 @@ ggplot(df_long, aes(x = date, y = Value)) +
   facet_wrap(~ Feature, scales = "free_y", ncol = 3) +
   labs(title = "Time Series of Engineered Features", x = "Date", y = "Value") +
   theme_minimal()
-
-
-
-
-
-
-
-
-
